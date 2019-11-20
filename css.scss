@@ -1,0 +1,256 @@
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-image: url('https://c.wallhere.com/photos/15/78/1920x900_px_1star_action_adventure_Awakens_Disney_fi_Force-1622101.jpg!d');
+  background-size: 180%;
+  background-repeat: no-repeat;
+}
+
+#app.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  background: #000000c4;
+  transition: ease-in-out .80s;
+  position: relative;
+  z-index: 3000;
+  height: 100vh;
+}
+
+.sidebar {
+  padding: 30px;
+  width: 300px;
+  height: 100vh;
+  background: black;
+  color: white;
+  transform: translateX(-80%);
+  display: flex;
+  align-self: center;
+  transition: ease-in-out .40s;
+  pointer-events: auto;
+  border-right: 1px solid green;
+  position: fixed;
+
+  &.is-open {
+    transform: translateX(0%);
+  }
+
+  & button,
+  & button:focus {
+    width: 120px;
+    height: 30px;
+    color: green;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -20px;
+    margin-top: 60px;
+    font-size: 18px;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    transition: ease-in-out .40s;
+    letter-spacing: 3px;
+    outline: 0;
+  }
+
+  & ul {
+    font-size: 17px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: arial;
+    text-transform: uppercase;
+    margin-top: 150px;
+
+    & li a {
+      display: block;
+      height: 40px;
+      text-decoration: none;
+      color: white;
+    }
+
+    & li:hover {
+      color: red
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: ease-in-out .40s;
+  text-align: center;
+  color: red;
+}
+
+
+/* -------------- Component Spare parts --------------- */
+
+.spare-parts {
+
+  width: 100%;
+  height: 100vh;
+  background: url('http://stefankarlberg.se/wp-content/uploads/2019/11/falcon.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &.locked {
+    pointer-events: none;
+  }
+}
+
+.spare-parts__hotspot {
+  right: 20%;
+  top: 10%;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  background: rgba(27, 60, 3, 0.93);
+}
+
+.spare-parts__quantity {
+  margin-top: 20px;
+  padding: 10px;
+
+  & h2 {
+    font-size: 17px;
+    color: white;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: arial;
+    margin-bottom: 20px;
+  }
+
+  & button {
+    color: white;
+    background: none;
+    border: 1px solid white;
+    font-size: 17px;
+    padding: 5px 10px;
+    margin: 0px;
+    list-style: 17px;
+  }
+}
+
+.spare-parts__add-to-cart {
+  margin-top: 20px;
+
+  & button {
+    color: white;
+    background: none;
+    font-size: 20px;
+    padding: 7px;
+    border: 1px solid white;
+
+  }
+
+  & button:hover {
+    color: black;
+    background: white;
+
+  }
+}
+
+/* -------------- Component contact us --------------- */
+
+.contact-us {
+  height: 300px;
+  width: 100%;
+  background: green;
+}
+
+
+//Checkout
+
+.checkout {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+/* -------------- Component landing --------------- */
+
+.starship {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  & h1 {
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: green;
+  }
+
+  &.locked {
+    pointer-events: none;
+  }
+}
+
+.starship-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__card {
+    display: flex;
+    align-items: flex-end;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid green;
+    background: black;
+
+    &__overlay {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: green;
+      }
+
+
+      & h3 a {
+        font-size: 25px;
+        font-family: arial;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 0px;
+        text-decoration: none;
+      }
+
+      & h4 {
+        font-size: 12px;
+        font-family: arial;
+        color: white;
+        margin-top: 0px;
+      }
+    }
+
+  }
+}
+
