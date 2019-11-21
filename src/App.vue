@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <Nav />
-    <Spinner color="hotpink"/>
+    <!--<Spinner color="hotpink"/>-->
     <div class="main-container">
-      <h1>{{ cart }}</h1>
       <ImageGallery />
     </div>
   </div>
@@ -12,15 +11,15 @@
 <script>
 import ImageGallery from './components/ImageGallery.vue';
 import Nav from './components/Nav.vue';
-import Spinner from './components/Spinner.vue';
+/*import Spinner from './components/Spinner.vue';*/
 
 export default {
   name: 'app',
   components: {
     ImageGallery,
-    Nav,
-    Spinner
-  }
+    Nav
+   /* Spinner*/
+  },
 }
 </script>
 
