@@ -9,7 +9,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#" v-on:click="filterVisible">Categories</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">About us</a></li>
                 </ul>
             </div>
             <div>

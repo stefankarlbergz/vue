@@ -11,7 +11,7 @@
 <script>
 import ImageGallery from './components/ImageGallery.vue';
 import Nav from './components/Nav.vue';
-/*import Spinner from './components/Spinner.vue';*/
+
 
 export default {
   name: 'app',
